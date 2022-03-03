@@ -1,0 +1,5 @@
+x 13,9 lunghezza
+y 16,8 profondità
+z 4,8  altezza
+
+origin LEFT-BOTTOM in calib_1

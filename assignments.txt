@@ -1,0 +1,55 @@
+ Esercizi di visione computazionale
+-----------------------------------------
+
+CALIBRAZIONE
+1. Metodo diretto (DLT)
+    Fotografo un oggetto di calibrazione e uso le formule viste finora (DLT, 
+    Direct Linear Transform) per calibrare la camera e misurare l'oggetto, 
+    per verificare che sia coerente con la misura reale.
+    Prima uso lo script del prof con delle foto mie, poi scrivo il mio script.
+
+2. Utilizzo del Caltech's Calibration Toolbox for MATLAB
+    Prendere confidenza con il toolbox, usando anche foto nuove.
+
+3. Esercizi di riproiezione 3D -> 2D
+    Proiettare un oggetto sintetico animato sull'oggetto di calibrazione.
+
+
+STEREOPSI
+4. Triangolazione
+    Capire dove si trova un punto nel 3D in base a due immagini stereo.
+
+5. Rette epipolari
+    Calcolare la matrice fondamentale e disegnare le rette epipolari di un 
+    immagine sull'altra e viceversa.
+
+6. Rettificazione immagini
+    Allineare gli estrinseci di due MPP ottenendo rette epipolari parallele.
+
+NO 7. Posa relativa
+    Calcolare la matrice essenziale e fattorizzarla a partire da due immagini 
+    "prese in movimento" (basta che abbiano gli stessi intrinseci e usare 
+    una come sistema di riferimento).
+
+
+OMOGRAFIE
+8. Mosaicing
+    Sfruttando le omografie possiamo passare da una camera all'altra in un 
+    setup stereo.
+
+NO 9. Calibrazione di Zhang
+    Sfruttando le omografie possiamo calibrare una camera usando semplicemente 
+    un piano calibratore (scacchiera).
+
+
+ORIENTAZIONE (Posa assoluta)
+10. Metodo con SVD  (3D -> 3D)
+    Troviamo (s,R,t) minimizzando l'errore e usando SVD
+
+11. Metodo di Fiore  (2D -> 3D)
+    Troviamo (s,R,t) della camera rispetto alla scena nota K. In pratica, è 
+    un metodo alternativo alla calibrazione, in cui abbiamo già gli 
+    intrinseci e vogliamo sapere dove si trova esattamente la camera, 
+    compreso il fattore di scala globale.
+
+
